@@ -13,7 +13,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @NoArgsConstructor
-public class RefreshToken {
+public class RefreshToken extends  BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
