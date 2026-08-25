@@ -1,11 +1,13 @@
 package com.rogger.movitback.domain.model;
 
-import com.rogger.movitback.domain.model.enums.SeasonStatus;
+import com.rogger.movitback.domain.enums.SeasonStatus;
 import jakarta.persistence.*;
 import jdk.jfr.Timestamp;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Getter
@@ -19,7 +21,10 @@ public class Season extends BaseEntity {
     private Media media;
 
     @Column(nullable = false)
-    private String tmdbId;
+    private int tmdbId;
+
+    @Column(nullable = false)
+    private String imdbId;
 
     private String sinopse;
 
@@ -33,6 +38,5 @@ public class Season extends BaseEntity {
 
     private String title;
 
-    @Timestamp
-    private String airedAt;
+    private LocalDateTime airedAt;
 }

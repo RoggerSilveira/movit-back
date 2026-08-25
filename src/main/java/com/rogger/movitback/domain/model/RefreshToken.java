@@ -13,17 +13,12 @@ import java.util.UUID;
 @Getter
 @Setter
 @NoArgsConstructor
-public class RefreshToken extends  BaseEntity{
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
-
+public class RefreshToken extends BaseEntity {
     @Column(nullable = false, unique = true)
     private String token;
 
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "users_id", nullable = false)
     private User user;
 
     @Column(nullable = false)
@@ -31,7 +26,4 @@ public class RefreshToken extends  BaseEntity{
 
     @Column(nullable = false)
     private boolean revoked = false;
-
-    @Column(nullable = false, updatable = false)
-    private Instant createdAt = Instant.now();
 }

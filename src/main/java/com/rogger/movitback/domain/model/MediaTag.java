@@ -18,5 +18,5 @@ public class MediaTag extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "tags_id", nullable = false)
-    private Tag category;
+    private Tag tag;
 }

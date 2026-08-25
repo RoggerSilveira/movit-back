@@ -1,6 +1,6 @@
 package com.rogger.movitback.domain.model;
 
-import com.rogger.movitback.domain.model.enums.Role;
+import com.rogger.movitback.domain.enums.Role;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

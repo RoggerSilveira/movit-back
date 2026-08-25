@@ -1,7 +1,7 @@
 package com.rogger.movitback.domain.model;
 
-import com.rogger.movitback.domain.model.enums.MediaStatus;
-import com.rogger.movitback.domain.model.enums.MediaType;
+import com.rogger.movitback.domain.enums.MediaStatus;
+import com.rogger.movitback.domain.enums.MediaType;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

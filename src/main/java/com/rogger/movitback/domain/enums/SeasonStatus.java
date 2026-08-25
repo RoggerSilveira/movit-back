@@ -1,4 +1,4 @@
-package com.rogger.movitback.domain.model.enums;
+package com.rogger.movitback.domain.enums;
 
 public enum SeasonStatus {
     UPCOMING,
